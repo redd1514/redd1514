@@ -2,7 +2,12 @@
 # Hi there 👋, I'm Elmer Benitez
 ## 🚀 About Me
 Portfolio: https://portfolio-wheat-alpha-49.vercel.app/
+
 I'm a 3rd year student at Pamantasan ng Lungsod ng Valenzuela and a Full Stack Developer passionate about the growing technology advancement. I want to solve more real-world problems with my skills.
+## 🌱 Current Focus
+- Exploring new technologies and frameworks
+- Building solutions for real-world problems
+- Advancing my full stack development skills
 ### 💻 Programming Languages
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
@@ -32,12 +37,6 @@ I'm a 3rd year student at Pamantasan ng Lungsod ng Valenzuela and a Full Stack D
 - 📧 Email: Benitez1504elmer@gmail.com
 - 👤 Facebook: [Redd Benitez](https://www.facebook.com/redd.benitez)
 - 💻 GitHub: [@redd1514](https://github.com/redd1514)
-## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=redd1514&show_icons=true&theme=radical)
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=redd1514&show_icons=true&theme=radical)
-## 🌱 Current Focus
-- Exploring new technologies and frameworks
-- Building solutions for real-world problems
-- Advancing my full stack development skills
+
 ---
 ⭐️ From [redd1514](https://github.com/redd1514)

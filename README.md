@@ -1,4 +1,4 @@
-# Hi there 👋, I'm Elmer Benitez II
+# Hi there, I'm Elmer Benitez II
 ## 🚀 About Me
 Portfolio: https://portfolio-wheat-alpha-49.vercel.app/
 
@@ -39,4 +39,4 @@ I'm a 3rd year student at Pamantasan ng Lungsod ng Valenzuela and a Full Stack D
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/redd.benitez)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elmer-benitez-867a46381/)
 ---
-⭐️ From [@redd1514](https://github.com/redd1514)
+

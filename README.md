@@ -2,7 +2,7 @@
 ## 🚀 About Me
 Portfolio: https://portfolio-wheat-alpha-49.vercel.app/
 
-I'm a 3rd year student at Pamantasan ng Lungsod ng Valenzuela and a Full Stack Developer passionate about the growing technology advancement. I want to solve more real-world problems with my skills.
+I’m currently a third-year Information Technology student at Pamantasan ng Lungsod ng Valenzuela, where I’ve developed a passion for full stack development and modern technology. I thrive on building practical digital solutions that address real-world challenges, and I’m always excited to explore new frameworks, tools, and trends in the tech space. My goal is to keep growing as a developer and help create meaningful projects that make a difference.
 ## 🌱 Current Focus
 - Exploring new technologies and frameworks
 - Building solutions for real-world problems
@@ -18,6 +18,7 @@ I'm a 3rd year student at Pamantasan ng Lungsod ng Valenzuela and a Full Stack D
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ### Frameworks & Libraries
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)

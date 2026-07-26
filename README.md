@@ -1,4 +1,4 @@
-# Hi there, I'm Elmer Benitez II
+# I'm Elmer Benitez II
 ## 🚀 About Me
 Portfolio: (https://reddbenitez.vercel.app/)
 

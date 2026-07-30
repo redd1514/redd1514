@@ -3,7 +3,7 @@
 Portfolio: https://reddbenitez.vercel.app/
 
 I’m a graduating Information Technology student at Pamantasan ng Lungsod ng Valenzuela, where I’ve developed a passion for full stack development and modern technology. I thrive on building practical digital solutions that address real-world challenges, and I’m always excited to explore new frameworks, tools, AI, and trends in the tech space. My goal is to keep growing as a developer and help create meaningful projects that truly makes a difference. 
-##  Current Focus
+##  Current Focu
 - Exploring new technologies, frameworks, and generative AI
 - Building solutions for real-world problems
 - Advancing my full stack development skills

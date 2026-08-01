@@ -6,7 +6,7 @@ I'm a graduating Information Technology student at Pamantasan ng Lungsod ng Vale
 ##  Current Focus
 - Exploring new technologies, frameworks, and generative AI
 - Building solutions for real-world problems
-- Advancing my full stack development skills
+- Advancing my full stack  skills
 ##  Tech Stack
 ### Programming Languages
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)

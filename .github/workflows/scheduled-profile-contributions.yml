@@ -1,0 +1,147 @@
+name: Scheduled profile contributions
+
+on:
+  schedule:
+    - cron: "7 8 8,9,15-22 8 *"
+      timezone: "Asia/Manila"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scheduled-profile-contributions
+  cancel-in-progress: false
+
+jobs:
+  contribute:
+    name: Create scheduled empty commits
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Manila
+      AUTHOR_NAME: redd benitez
+      AUTHOR_EMAIL: 212811754+redd1514@users.noreply.github.com
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate and run
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "$AUTHOR_NAME"
+          git config user.email "$AUTHOR_EMAIL"
+          git fetch origin main
+          git checkout main
+          git pull --ff-only origin main
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "The checkout is not clean; refusing to continue." >&2
+            exit 1
+          fi
+
+          run_date="$(date +%F)"
+          dry_run=false
+
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            dry_run=true
+            echo "Manual dispatch is dry-run only; no commits will be created."
+          else
+            case "$run_date" in
+              2026-08-08|2026-08-09|2026-08-15|2026-08-16|2026-08-17|2026-08-18|2026-08-19|2026-08-20|2026-08-21|2026-08-22) ;;
+              *)
+                echo "Refusing to run outside an approved 2026 schedule date: $run_date" >&2
+                exit 1
+                ;;
+            esac
+          fi
+
+          before_tree="$(git rev-parse HEAD^{tree})"
+          before_readme="$(git rev-parse HEAD:README.md)"
+          missing=0
+
+          for number in $(seq -w 1 10); do
+            message="Scheduled profile contribution ${run_date} (${number}/10)"
+            existing_sha="$(
+              git log origin/main --format='%H%x09%ae%x09%s' |
+                while IFS=$'\t' read -r sha email subject; do
+                  if [[ "$email" == "$AUTHOR_EMAIL" && "$subject" == "$message" ]]; then
+                    echo "$sha"
+                    break
+                  fi
+                done
+            )"
+
+            if [[ -n "$existing_sha" ]]; then
+              echo "Already present: $message ($existing_sha)"
+              continue
+            fi
+
+            missing=$((missing + 1))
+            if [[ "$dry_run" == "true" ]]; then
+              echo "Would create: $message"
+            else
+              stamp="$(date --iso-8601=seconds)"
+              GIT_AUTHOR_DATE="$stamp" GIT_COMMITTER_DATE="$stamp" \
+                git commit --allow-empty -m "$message"
+            fi
+          done
+
+          if [[ "$dry_run" == "true" ]]; then
+            git push --dry-run origin HEAD:main
+            [[ "$(git rev-parse HEAD^{tree})" == "$before_tree" ]]
+            [[ "$(git rev-parse HEAD:README.md)" == "$before_readme" ]]
+            echo "Dry run passed. Existing: $((10 - missing)); missing: $missing; created: 0."
+            exit 0
+          fi
+
+          if [[ "$missing" -gt 0 ]]; then
+            [[ "$(git rev-parse HEAD^{tree})" == "$before_tree" ]]
+            [[ "$(git rev-parse HEAD:README.md)" == "$before_readme" ]]
+            git push origin main
+          fi
+
+          git fetch origin main
+          [[ "$(git rev-parse origin/main^{tree})" == "$before_tree" ]]
+          [[ "$(git rev-parse origin/main:README.md)" == "$before_readme" ]]
+
+          verified=0
+          for number in $(seq -w 1 10); do
+            message="Scheduled profile contribution ${run_date} (${number}/10)"
+            commit_sha="$(
+              git log origin/main --format='%H%x09%ae%x09%s' |
+                while IFS=$'\t' read -r sha email subject; do
+                  if [[ "$email" == "$AUTHOR_EMAIL" && "$subject" == "$message" ]]; then
+                    echo "$sha"
+                    break
+                  fi
+                done
+            )"
+
+            if [[ -z "$commit_sha" ]]; then
+              echo "Missing expected commit: $message" >&2
+              exit 1
+            fi
+
+            author_login="$(gh api "repos/${GITHUB_REPOSITORY}/commits/${commit_sha}" --jq '.author.login // ""')"
+            if [[ "$author_login" != "redd1514" ]]; then
+              echo "Commit $commit_sha is not attributed to redd1514." >&2
+              exit 1
+            fi
+
+            if [[ -n "$(git diff-tree --no-commit-id --name-only -r "$commit_sha")" ]]; then
+              echo "Commit $commit_sha changed repository content." >&2
+              exit 1
+            fi
+
+            verified=$((verified + 1))
+          done
+
+          [[ "$verified" -eq 10 ]]
+          echo "Verified 10 empty commits for $run_date; README.md and the repository tree are unchanged."

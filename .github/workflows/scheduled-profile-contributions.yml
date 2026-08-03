@@ -23,7 +23,7 @@ jobs:
       AUTHOR_EMAIL: 212811754+redd1514@users.noreply.github.com
     steps:
       - name: Check out main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0

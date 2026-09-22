@@ -48,6 +48,19 @@ jobs:
 
           run_date="$(date +%F)"
           dry_run=false
+          find_commit() {
+            local message="$1"
+            local found=""
+            local sha email subject
+
+            while IFS=$'\t' read -r sha email subject; do
+              if [[ -z "$found" && "$email" == "$AUTHOR_EMAIL" && "$subject" == "$message" ]]; then
+                found="$sha"
+              fi
+            done < <(git log origin/main --format='%H%x09%ae%x09%s')
+
+            printf '%s' "$found"
+          }
 
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             dry_run=true
@@ -68,15 +81,7 @@ jobs:
 
           for number in $(seq -w 1 10); do
             message="Scheduled profile contribution ${run_date} (${number}/10)"
-            existing_sha="$(
-              git log origin/main --format='%H%x09%ae%x09%s' |
-                while IFS=$'\t' read -r sha email subject; do
-                  if [[ "$email" == "$AUTHOR_EMAIL" && "$subject" == "$message" ]]; then
-                    echo "$sha"
-                    break
-                  fi
-                done
-            )"
+            existing_sha="$(find_commit "$message")"
 
             if [[ -n "$existing_sha" ]]; then
               echo "Already present: $message ($existing_sha)"
@@ -114,15 +119,7 @@ jobs:
           verified=0
           for number in $(seq -w 1 10); do
             message="Scheduled profile contribution ${run_date} (${number}/10)"
-            commit_sha="$(
-              git log origin/main --format='%H%x09%ae%x09%s' |
-                while IFS=$'\t' read -r sha email subject; do
-                  if [[ "$email" == "$AUTHOR_EMAIL" && "$subject" == "$message" ]]; then
-                    echo "$sha"
-                    break
-                  fi
-                done
-            )"
+            commit_sha="$(find_commit "$message")"
 
             if [[ -z "$commit_sha" ]]; then
               echo "Missing expected commit: $message" >&2

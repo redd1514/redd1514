@@ -45,7 +45,7 @@ I'm a graduating Information Technology student at Pamantasan ng Lungsod ng Vale
 ![GitHub CLI](https://img.shields.io/badge/GitHub_CLI-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Railway CLI](https://img.shields.io/badge/Railway_CLI-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
 ## 📫 Connect With Me
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Benitez1504elmer@gmail.com)
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/redd.benitez)

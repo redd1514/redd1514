@@ -1,7 +1,7 @@
 <!--
   Profile README for Elmer Benitez II
   Keep assets/profile-header.svg beside this file when publishing the README.
-  Tip: replace "reddbenitez" in the dynamic cards below if your GitHub username is different.
+  The contribution snake is generated daily for the GitHub account redd1514.
   Update the technology badges as your toolkit evolves.
 -->
 
@@ -14,8 +14,8 @@
 
   <p>
     <a href="https://reddbenitez.vercel.app/"><img src="https://img.shields.io/badge/VIEW_PORTFOLIO-0F2744?style=for-the-badge&logo=vercel&logoColor=50CFE8" alt="View portfolio" /></a>
-    <a href="https://github.com/reddbenitez"><img src="https://img.shields.io/badge/EXPLORE_GITHUB-0F2744?style=for-the-badge&logo=github&logoColor=9B8BFF" alt="Explore GitHub" /></a>
-    <img src="https://komarev.com/ghpvc/?username=reddbenitez&style=for-the-badge&color=0F2744&label=PROFILE+VIEWS" alt="Profile views" />
+    <a href="https://github.com/redd1514"><img src="https://img.shields.io/badge/EXPLORE_GITHUB-0F2744?style=for-the-badge&logo=github&logoColor=9B8BFF" alt="Explore GitHub" /></a>
+    <img src="https://komarev.com/ghpvc/?username=redd1514&style=for-the-badge&color=0F2744&label=PROFILE+VIEWS" alt="Profile views" />
   </p>
 </div>
 
@@ -24,6 +24,7 @@
   <a href="#current-focus">Current focus</a> &nbsp;·&nbsp;
   <a href="#tech-stack">Tech stack</a> &nbsp;·&nbsp;
   <a href="#github-at-a-glance">GitHub stats</a> &nbsp;·&nbsp;
+  <a href="#contribution-snake">Contribution snake</a> &nbsp;·&nbsp;
   <a href="#connect-with-me">Connect</a>
 </p>
 
@@ -113,12 +114,22 @@ I enjoy turning ideas into practical, user-focused solutions, learning how thing
 ## GitHub at a glance
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=reddbenitez&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github&include_all_commits=true" alt="Elmer's GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=reddbenitez&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" alt="Elmer's most used languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=redd1514&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github&include_all_commits=true" alt="Elmer's GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=redd1514&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" alt="Elmer's most used languages" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=reddbenitez&theme=tokyonight&hide_border=true" alt="Elmer's GitHub contribution streak" />
+  <img src="https://streak-stats.demolab.com?user=redd1514&theme=tokyonight&hide_border=true" alt="Elmer's GitHub contribution streak" />
+</div>
+
+## Contribution snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/redd1514/redd1514/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/redd1514/redd1514/output/snake.svg" />
+    <img src="https://raw.githubusercontent.com/redd1514/redd1514/output/snake.svg" alt="Animated snake moving through redd1514's GitHub contribution grid" width="100%" />
+  </picture>
 </div>
 
 ## A little more about me
@@ -139,7 +150,7 @@ I enjoy turning ideas into practical, user-focused solutions, learning how thing
 
 <div align="center">
   <a href="https://reddbenitez.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20my%20website-2563eb?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://github.com/reddbenitez"><img src="https://img.shields.io/badge/GitHub-Follow%20my%20work-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/redd1514"><img src="https://img.shields.io/badge/GitHub-Follow%20my%20work-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </div>
 
 <br>
@@ -149,3 +160,4 @@ I enjoy turning ideas into practical, user-focused solutions, learning how thing
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1025,55:152E50,100:42D9F5&height=95&section=footer" alt="Footer wave" width="100%" />
+

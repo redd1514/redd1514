@@ -2,7 +2,7 @@
 ## About Me
 Portfolio: https://reddbenitez.vercel.app/
 
-I'm a graduating Information Technology student at Pamantasan ng Lungsod ng Valenzuela, where I’ve developed a passion for full stack development and modern technology. I thrive on building practical solutions and continuously improving my skills.
+I'm a graduating Information Technology student at Pamantasan ng Lungsod ng Valenzuela, where I’ve developed a passion for full stack development and modern technology. I thrive on building practical solutions and continuously expanding my technical skills.
 
 ##  Current Focus
 - Exploring new technologies, frameworks, and generative AI
@@ -39,11 +39,11 @@ I'm a graduating Information Technology student at Pamantasan ng Lungsod ng Vale
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ### Cloud & Deployment
 ![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
 ### Tools & DevOps
+![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![GitHub CLI](https://img.shields.io/badge/GitHub_CLI-181717?style=for-the-badge&logo=github&logoColor=white)
